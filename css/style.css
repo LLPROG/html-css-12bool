@@ -1,0 +1,22 @@
+
+
+[class*="col-"] {
+    border: 1px solid white;
+    background-color: #006cfa;
+    height: 50px;
+}
+
+.special {
+    padding: 10px;
+    height: auto;
+}
+
+.row.center {
+    margin-top: 20px;
+}
+
+.row.color > * {
+    background-color: rgb(51, 240, 51);
+    border: 1px solid #006cfa;
+
+}
