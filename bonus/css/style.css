@@ -1,0 +1,136 @@
+
+
+:root {
+    --main-color: #cecb69;
+    --muso-color: #a7661c;
+    --line-color: rgb(168, 21, 21);
+}
+
+
+body {
+    transform-style: preserve-3d;
+    padding-top: 60px;
+
+    overflow: hidden;
+}
+
+.container {
+    animation: rotate 20s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    49% {
+        transform: skew(15deg, 15deg);
+    }
+
+    50% {
+        transform: skew(0, 0);
+    }
+
+    60% {
+        transform: skew(0, 0);
+    }
+
+    98% {
+        transform: skew(-15deg, -15deg);
+    }
+
+    100% {
+        transform: skew(0, 0);
+    }
+
+    
+
+
+    
+}
+
+
+
+
+[class*="col-"] {
+    /* border: 1px solid white; */
+    background-color: var(--main-color);
+    height: 50px;
+}
+
+.special {
+    padding: 10px;
+    height: auto;
+}
+
+.row.center {
+    margin-top: 20px;
+}
+
+.row.color > * {
+    background-color: rgb(51, 240, 51);
+    border: 1px solid #006cfa;
+}
+
+.radius-bl {
+    border-bottom-left-radius: 50px;
+}
+
+.radius-rb {
+    border-bottom-right-radius: 50px;
+}
+
+.radius-tr {
+    border-top-right-radius: 50px;
+}
+
+.radius-tl {
+    border-top-left-radius: 50px;
+}
+
+
+/* EYES */ 
+
+.morph {
+    background: var(--main-color);
+    box-shadow: inset 8px 8px 8px #b1af5a,
+            inset -8px -8px 8px #ebe778;
+}
+
+.row.muso .morph {
+    background: var(--muso-color);
+    box-shadow: inset 8px 8px 8px #663e10,
+            inset -8px -8px 8px rgb(230, 175, 114);
+
+}
+
+.row.lingua .morph {
+    background: rgba(230, 57, 57, 0.726);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+
+
+.muso [class*="col-"] {
+    background-color: var(--muso-color);
+
+}
+
+
+/* line */ 
+
+.row.line [class*="col-"] {
+    /* border: 1px solid white; */
+    
+    height: 50px;
+
+}
+
+.row.line .morph {
+    background: var(--muso-color);
+    box-shadow: inset 8px 8px 8px #663e10,
+            inset -8px -8px 8px rgb(230, 175, 114);
+}
+
+
